@@ -20,7 +20,7 @@ function handleSubmitData(){
     return;
   }
 
-  alert("Olá " + nameUser + ", você tem " + ageUser + " anos e já está aprendendo " + languageUser + "!");
+  alert(`Olá ${nameUser}", você tem ${ageUser} anos e já está aprendendo ${languageUser}!`);
 
 
   var feedback = prompt("Você gosta de estudar " + languageUser + "?\nResponda com número 1 para SIM ou 2 para NÃO");
