@@ -4,7 +4,12 @@ let responseUser = prompt("Tente acertar um número de 0 a 10");
 let cnt = 2;
 
 while(responseUser != response && cnt > 0) {
-  alert(`Ops, parece que você errou! Você tem mais ${cnt} tentiva(s)!`);
+  if(responseUser < 0 || responseUser > 10){
+    alert(`Ops, parece que você errou e ainda chutou um número que não estava em jogo! Você tem mais ${cnt} tentiva(s)!`);
+  } else if(responseUser >= 0 && responseUser <= 10){
+    alert(`Ops, parece que você errou! Você tem mais ${cnt} tentiva(s)!`);
+  }
+
   cnt--;
   responseUser = prompt("Tente acertar um número de 0 a 10");
 }
