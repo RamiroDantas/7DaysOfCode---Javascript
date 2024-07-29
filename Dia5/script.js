@@ -16,7 +16,7 @@ while(1){
   
   if(categoryResponse != '1' && categoryResponse != '2' && categoryResponse != '3' && categoryResponse != '4'){
     while(1){
-      alert('Digite um número válido');
+      alert('Essa categoria não foi pré-definida.');
       categoryResponse = prompt("Qual categoria essa comida se encaixa? Digite o número que define a categoria: \n\n1 - 'Frutas'\n2 - laticínios\n3 - congelados\n4 - Doces");
       if(categoryResponse == '1' && categoryResponse == '2' && categoryResponse == '3' && categoryResponse == '4'){
         break;
@@ -33,6 +33,7 @@ while(1){
   } else if(categoryResponse == '4'){
     categoryFood[3].push(food);
   }
+
   } else if( boolResponse === '2') {
     break;
   } else {
