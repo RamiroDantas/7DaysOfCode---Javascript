@@ -12,12 +12,12 @@ while(1){
 
   var food = prompt("Qual comida você deseja inserir?");
 
-  var categoryResponse = prompt("Qual categoria essa comida se encaixa? Digite o número que define a categoria: \n\n1 - 'Frutas'\n2 - Laticínios\n3 - Congelados\n4 - Doces");
+  var categoryResponse = prompt("Qual categoria essa comida se encaixa? Digite o número que define a categoria: \n\n1 - Frutas\n2 - Laticínios\n3 - Congelados\n4 - Doces");
   
   if(categoryResponse != '1' && categoryResponse != '2' && categoryResponse != '3' && categoryResponse != '4'){
     while(1){
       alert('Essa categoria não foi pré-definida.');
-      categoryResponse = prompt("Qual categoria essa comida se encaixa? Digite o número que define a categoria: \n\n1 - 'Frutas'\n2 - laticínios\n3 - congelados\n4 - Doces");
+      categoryResponse = prompt("Qual categoria essa comida se encaixa? Digite o número que define a categoria: \n\n1 - Frutas\n2 - laticínios\n3 - congelados\n4 - Doces");
       if(categoryResponse == '1' && categoryResponse == '2' && categoryResponse == '3' && categoryResponse == '4'){
         break;
       }
